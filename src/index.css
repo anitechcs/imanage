@@ -6,14 +6,12 @@ body {
   position: relative;
   color: white;
   height: 100vh;
+  width: 100%;
   background: #ffe259;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(top, #F0CE81, #F8DC94);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #F0CE81, #F8DC94); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: sans-serif;
   overflow-y: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 button {
@@ -35,6 +33,25 @@ button:hover {
   opacity: 1;
 }
 
+.sidebar {
+  background: palegoldenrod;
+
+}
+
+.content {
+  height: 85vh;
+}
+
+.header {
+  height: 10vh;
+  background: transparent;
+}
+
+.footer {
+  height: 5vh;
+  background: transparent;
+}
+
 .water{
   width: 62px;
   height: 62px;
@@ -44,6 +61,7 @@ button:hover {
   box-shadow: inset 0 0 30px 0 rgba(0,0,0,.5), 0 4px 10px 0 rgba(0,0,0,.5);
   overflow: hidden;
 }
+
 .water:before, .water:after{
   content:'';
   position: absolute;
@@ -52,16 +70,19 @@ button:hover {
   top:-25px;
   background-color: #fff;
 }
+
 .water:before{
   border-radius: 45%;
   background:rgba(255,255,255,.7);
   animation:wave 5s linear infinite;
 }
+
 .water:after{
   border-radius: 35%;
   background:rgba(255,255,255,.3);
   animation:wave 5s linear infinite;
 }
+
 @keyframes wave{
   0%{
       transform: rotate(0);

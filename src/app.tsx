@@ -1,9 +1,9 @@
 import * as ReactDOM from "react-dom/client";
-import Layout from "./components/Layout";
+import { Provider } from "./Provider";
 
 function render() {
   const root = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(<Layout />);
+  root.render(<Provider />);
 }
 
 render();
